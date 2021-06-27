@@ -17,7 +17,7 @@ spec:
       containers:
       - name: rkundanala
       image: rkundanala/dockerimage-new
-        imagePullPolicy: Always
-      command: [ "echo", "SUCCESS" ]
-EOF
+       ports:
+        - name: python:2.7
+          containerPort: 8080
       
