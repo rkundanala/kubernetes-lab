@@ -1,23 +1,22 @@
 apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
-  name: python-controller
+  name: coustomimage-controller
   labels:
-    app: pythonhelloworld
+    app: coustomworld
 spec:
   replicas: 4
   selector:
     matchLabels:
-      app: pythonhelloworld
+      app: coustomworld
   template:
     metadata:
       labels:
-        app: pythonhelloworld
-        spec:
+        app: coustomworld
+    spec:
       containers:
-      - name: rkundanala
-      image: rkundanala/dockerimage-new
-       ports:
-        - name: python:2.7
-          containerPort: 8080
-      
+      - name: k8s-demo
+        image: lakshman345/puthontest
+        ports:
+        - name: nodejs-port
+          containerPort: 3002
