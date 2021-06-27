@@ -1,18 +1,18 @@
 apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
-  name: helloworld-controller
+  name: python-controller
   labels:
-    app: helloworld
+    app: pythonhelloworld
 spec:
   replicas: 4
   selector:
     matchLabels:
-      app: helloworld
+      app: pythonhelloworld
   template:
     metadata:
       labels:
-        app: helloworld
+        app: pythonhelloworld
         spec:
       containers:
       - name: rkundanala
