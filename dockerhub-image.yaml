@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: k8s-demo
-        image: lakshman345/puthontest
+        image: rkundanala/dockerimage-new
         ports:
         - name: nodejs-port
           containerPort: 3002
