@@ -17,7 +17,7 @@ spec:
       containers:
       - name: rkundanala
       image: rkundanala/dockerimage-new
-        ports:
-        - name: nodejs-port
-          containerPort: 8080
+        imagePullPolicy: Always
+      command: [ "echo", "SUCCESS" ]
+EOF
       
