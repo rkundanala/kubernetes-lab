@@ -4,6 +4,7 @@ metadata:
   name: redis-deployment
 spec:
   replicas: 3
+  type: LoadBalancer
   selector:
     matchLabels:
       app: redis
