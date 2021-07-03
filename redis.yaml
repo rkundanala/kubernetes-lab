@@ -16,7 +16,7 @@ spec:
       - name: redis
         image: rkundanala/redis-image
         ports:
-          containerPort: 6379
+          containerPort: 80
         livenessProbe:
           httpGet:
             path: /
