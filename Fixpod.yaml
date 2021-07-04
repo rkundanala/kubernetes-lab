@@ -1,13 +1,10 @@
 apiVersion: v1
 kind: Pod
 metaData:
-  name: Pod1
-  labels:
-    app: frontend
+  name: Pod11
 spec:
-  container:
+  containers:
   - name: nginx
-    image: nginx1909
+    image: nginx
     ports:
-    name: nodejs-port
-    containerPort: 80
+     - containerPort: 80
