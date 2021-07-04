@@ -2,8 +2,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: helloworld-deployment
-  annotations:
-    deployment.kubernetes.io/revision: "1"
   labels:
     app: redis-deployment
   name: redis-deployment
