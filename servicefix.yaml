@@ -4,7 +4,7 @@ metadata:
   name: my-service
 spec:
    selector:
-    app: MyApp
+     app: MyApp
   ports:
     port: 80
     targetPort: 8336
